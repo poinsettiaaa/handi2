@@ -12,9 +12,224 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#ffffff"
         tools:context=".MainActivity">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shadow_bottom">
 
-        <TextView
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_logo1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico_hd1"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/shadow_radius">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="none"
+                        android:paddingLeft="20dp"
+                        android:hint="장소"
+                        android:textColorHint="#000000"
+                        android:textSize="14dp"
+                        android:textColor="#000000"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:text="검색"
+                        android:textSize="14dp"
+                        android:textColor="#000000"
+                        android:background="none"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="빈티지하고 아늑한 카페, 식당, 레스토랑, 펍 in 상권"
+                    android:textSize="16dp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_marginRight="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_picture1"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_picture1"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_picture1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="서울특별시 용산구 이태원로 157번길 00상가 00빌딩 103호"
+                    android:textSize="16dp"
+                    android:textColor="#000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="#가나다라마바사"
+                        android:textSize="14dp"
+                        android:textColor="#aaa"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="#아자차카타파하"
+                        android:textSize="14dp"
+                        android:textColor="#aaa"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="#가나다라마바사"
+                        android:textSize="14dp"
+                        android:textColor="#aaa"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="#아자차카타파하"
+                        android:textSize="14dp"
+                        android:textColor="#aaa"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="휴게 음식점"
+                    android:textSize="14dp"
+                    android:textColor="#aaa"/>
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tvType"
+                    android:text="1회전 20명"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/tvReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvCount"
+                    android:text="후기"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvReview"
+                    android:text="15"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="평균 130,000/Day"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.name}"
@@ -24,7 +239,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.address}"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"/>-->
 
     </RelativeLayout>
 
