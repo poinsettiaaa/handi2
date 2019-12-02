@@ -15,7 +15,16 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         val user = User("이름 노출", "주소 노출")
-        binding.setVariable(BR.user, user)
-        binding.executePendingBindings()
+
+        binding.user2 = user
+
+        var str01 = "#rkrkrkrkrkrk"
+        var str02 = "#222222"
+        var str03 = "#3333333"
+
+
+        binding.tvContent.text = str01 + " " + str02 + " " + str03
+
+
     }
 }
